@@ -1,9 +1,11 @@
-# day_trip
-selected_day_trip = {'city':'greece', 'restaurant':'cafe', 'transport':'horseback', 'entertainment':'dancing'}
 import random
-cities = ['paris','rome','greece']
+
+selected_day_trip = { 'city': 'greece', 'restaurant': 'cafe', 'transport': 'horseback', 'entertaiment': 'dancing'}
+
+cities = ['paris','nice','greece']
 fav_city = random.choice (cities)
 yes_no = input (f'Do you want to stay here? {fav_city}')
+
 while yes_no != 'yes':
     fav_city = random.choice (cities)
     yes_no = input (f'Do you want to stay here? {fav_city}')
@@ -35,6 +37,8 @@ while yes_no != 'yes':
     fun_things = random.choice (trip_entertainment)
     yes_no = input (f'What should you do? {fun_things}')
 
-selected_day_trip['entertainment'] = fun_things
+selected_day_trip['entertaiment'] = fun_things
 
 print('Enjoy your trip!')
+
+    
